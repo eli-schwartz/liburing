@@ -325,7 +325,7 @@ int main(int argc, char *argv[])
 
 	if (!(ring.features & IORING_FEAT_CQE_SKIP)) {
 		printf("IOSQE_CQE_SKIP_SUCCESS is not supported, skip\n");
-		return 0;
+		return 77;
 	}
 
 	for (i = 0; i < 4; i++) {

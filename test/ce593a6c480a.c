@@ -70,7 +70,7 @@ int main(int argc, char *argv[])
 	/* Setup the ring with a registered event fd to be notified on events */
 	ret = t_create_ring_params(8, &ring, &p);
 	if (ret == T_SETUP_SKIP)
-		return 0;
+		return 77;
 	else if (ret < 0)
 		return ret;
 

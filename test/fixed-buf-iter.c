@@ -63,7 +63,7 @@ static int test(struct io_uring *ring)
 		return 1;
 	}
 
-	if (cqe->res < 0) { 
+	if (cqe->res < 0) {
 		fprintf(stderr, "Error in async operation: %s\n", strerror(-cqe->res));
 		return 1;
 	}
@@ -100,7 +100,7 @@ int main(int argc, char *argv[])
 
 	ret = t_create_ring(8, &ring, 0);
 	if (ret == T_SETUP_SKIP)
-		return 0;
+		return 77;
 	else if (ret < 0)
 		return 1;
 

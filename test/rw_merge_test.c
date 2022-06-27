@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
 	ret = t_create_ring(4, &ring, 0);
 	if (ret == T_SETUP_SKIP)
-		return 0;
+		return 77;
 	else if (ret < 0)
 		return 1;
 
